@@ -1,19 +1,13 @@
-var CommentList = React.createClass({
-  render: function() {
+var CommentBox  = React.createClass({
+  render:function() {
     return (
-      <div className="commentList">
-        Hello, world! I am a CommentList.
+      <div className="commentBox">
+      Hello, World! I am a comment box in ReactJs
       </div>
     );
   }
 });
-
-var CommentForm = React.createClass({
-  render: function() {
-    return (
-      <div className="commentForm">
-        Hello, world! I am a CommentForm.
-      </div>
-    );
-  }
-});
+React.render(
+  <CommentBox />
+  document.getElementById('content')
+)
